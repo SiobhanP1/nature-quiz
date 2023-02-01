@@ -21,12 +21,12 @@
         </ul>
     </nav>
     <h1>Quiz</h1>
-    <section class="quiz-section">
-        <div class="q-number-container">
-            <p>Question <span class="current-q-number">0</span> of 7.</p>
+    <section id="quiz-section">
+        <div id="q-number-container">
+            <p>Question <span id="current-q-number">0</span> of 7.</p>
         </div>
-        <div class="quiz-question">
-            <p class="current-question">Current Question</p>
+        <div id="quiz-question">
+            <p id="current-question">Current Question</p>
         </div>
         <div id="answer-option-container">
             <form action="">
@@ -46,11 +46,11 @@
             <button type="button" id="check-ans-button">Check Answer</button>
         </div>
     </section>
-    <section class="results-section">
+    <section id="results-section">
         <div class="correct hidden">Correct!</div>
         <div class="incorrect hidden">Uh oh! The correct answer is <span id="correct-answer">Correct Answer</span></div>
         <button type="button" id="next-q-button" class="hidden">Next Question</button>
-        <div class="score-container">
+        <div id="score-container">
             <p>Correct: <span id="current-total-correct">0</span> Incorrect: <span id="current-total-incorrect">0</span>
             </p>
         </div>

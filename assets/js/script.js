@@ -11,3 +11,30 @@ let questions = [
 'correctAnswer': 'correctAnsQ2'}
 ];
 
+/*Event listeners */
+let checkAns = document.getElementById('check-ans-button');
+let nextQ = document.getElementById('next-q-button');
+document.addEventListener('DOMContentLoaded',displayQuestion);
+checkAns.addEventListener('click',checkAnswer);
+nextQ.addEventListener('click',displayQuestion);
+
+/* Display first question */
+let questionIndex = 0;
+function displayQuestion() {
+    alert('displayQcalled');
+    let currentQuestion = document.getElementById('current-question');
+    let optionOne = document.getElementById('option-one-text');
+    let optionTwo = document.getElementById('option-two-text');
+    let optionThree = document.getElementById('option-three-text');
+    currentQuestion.innerText = questions[questionIndex].question;
+    optionOne.innerText = questions[questionIndex].option1;
+    optionTwo.innerText = questions[questionIndex].option2;
+    optionThree.innerText = questions[questionIndex].option3;
+    
+    questionIndex++;
+    }
+
+/* Check answer correct or not*/
+function checkAnswer() {
+
+}
