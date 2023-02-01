@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,40 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
-      </style>
+    </style>
     <title>Nature Quiz</title>
 </head>
+
 <body>
     <nav class="nav-bar">
         <p class="home-icon"><a href="index.html" aria-label="Go to home page"><i class="fa-solid fa-dove"></i></a></p>
         <ul>
             <li class="nav-button"><a href="quiz.html" aria-label="Go to quiz page">Quiz</a></li>
-            <li class="nav-button"><a href="home.html" aria-label="Go to home page">Home</a></li>
+            <li class="nav-button"><a href="index.html" aria-label="Go to home page">Home</a></li>
         </ul>
     </nav>
-    <p>this is the quiz page</p>
-
+    <h1>Quiz</h1>
+    <section class="quiz-section">
+        <div class="q-number-container">
+            <p>Question <span class="current-q-number">0</span> of 7.</p>
+        </div>
+        <div class="quiz-question">
+            <p class="current-question">Current Question</p>
+        </div>
+    </section>
+    <section class="results-section">
+        <div class="correct hidden">Correct!</div>
+        <div class="incorrect hidden">Uh oh! The correct answer is <span id="correct-answer">Correct Answer</span></div>
+        <div class="score-container">
+            <p>Correct: <span id="current-total-correct">0</span> Incorrect: <span id="current-total-incorrect">0</span>
+            </p>
+        </div>
+    </section>
 
     <script src="assets/js/script.js"></script>
 
     <!--Font Awesome icons link-->
     <script src="https://kit.fontawesome.com/6189b95449.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
