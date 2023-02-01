@@ -41,12 +41,15 @@
                     <input type="radio" id="option-three" name="answer-options" value="option-three">
                     <label for="option-three"><span id="option-three-text">Option 3</span></label>
                 </fieldset>
+                
             </form>
+            <button type="button" id="check-ans-button">Check Answer</button>
         </div>
     </section>
     <section class="results-section">
         <div class="correct hidden">Correct!</div>
         <div class="incorrect hidden">Uh oh! The correct answer is <span id="correct-answer">Correct Answer</span></div>
+        <button type="button" id="next-q-button" class="hidden">Next Question</button>
         <div class="score-container">
             <p>Correct: <span id="current-total-correct">0</span> Incorrect: <span id="current-total-incorrect">0</span>
             </p>
