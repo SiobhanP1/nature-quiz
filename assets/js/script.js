@@ -86,12 +86,12 @@ function checkAnswer() {
 
 /* Update scores */
 function incrementCorrect() {
-    let correctAnswers = document.getElementById('current-total-correct').innerText;
+    let correctAnswers = parseInt(document.getElementById('current-total-correct').innerHTML);
     document.getElementById('current-total-correct').innerText = correctAnswers + 1;
 }
 
 function incrementIncorrect() {
-    let incorrectAnswers = document.getElementById('current-total-incorrect').innerText;
+    let incorrectAnswers = parseInt(document.getElementById('current-total-incorrect').innerHTML);
     document.getElementById('current-total-incorrect').innerText = incorrectAnswers + 1;
 }
 
@@ -112,5 +112,6 @@ function nextQuestion() {
     for (i=0; i<radiobuttons.length; i++) {
         radiobuttons[i].checked=false;
     }
+    questionIndex++;
     displayQuestion();
 }
