@@ -25,11 +25,18 @@ h1, h2 {
     float: right;
     line-height: 2rem;
     margin: 0 1rem;
+    list-style-type: none;
+}
+
+body a {
+    text-decoration: none;
 }
 
 .home-icon {
     display: inline-block;
     float: left;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .main-container {
@@ -46,10 +53,13 @@ h1, h2 {
     align-self: center;
 }
 
-.start-quiz-button {
-    font-size: 1.2rem;
+.quiz-button-container {
     align-self: center;
     padding: .5rem; 
     background-color: greenyellow; 
     width: 150px;
+}
+
+.start-quiz-button {
+    font-size: 1.2rem;
 }
