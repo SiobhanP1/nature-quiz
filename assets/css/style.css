@@ -9,3 +9,26 @@ body {
     color: blueviolet;
     font-family: 'Fredoka', sans-serif;
 }
+
+.nav-bar {
+
+}
+
+.nav-button {
+    font-size: 1.5rem;
+    display: inline-block;
+    float: right;
+}
+
+.home-icon {
+    display: inline-block;
+    float: left;
+}
+
+.main-container {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
