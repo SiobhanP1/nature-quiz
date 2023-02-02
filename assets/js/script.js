@@ -29,7 +29,6 @@ function displayQuestion() {
     if (questionIndex > questions.length) {
         displayEndingMsg();
     } else {
-        alert('displayQcalled');
         let currentQuestion = document.getElementById('current-question');
         let optionOne = document.getElementById('option-one-text');
         let optionTwo = document.getElementById('option-two-text');
@@ -47,10 +46,8 @@ let correctAnswers = document.getElementById('current-total-correct').value;
 let incorrectAnswers = document.getElementById('current-total-incorrect').value;
 
 function checkAnswer() {
-    console.log(questionIndex);
 
     if (document.getElementById('option-one').checked) {
-        alert('option 1 selected');
         let userSelected = questions[questionIndex].option1;
 
         if (userSelected === questions[questionIndex].correctAnswer) {
@@ -60,7 +57,6 @@ function checkAnswer() {
         }
 
     } else if (document.getElementById('option-two').checked) {
-        alert('option 2 selected');
         let userSelected = document.getElementById('option-two-text').innerText;
 
         if (userSelected === questions[questionIndex].correctAnswer) {
