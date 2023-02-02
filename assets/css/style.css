@@ -11,7 +11,7 @@ body {
 }
 
 h1, h2 {
-    font-size: clamp(2.3rem, 5vw, 3.2rem);
+    font-size: clamp(2.3rem, 5vw, 3rem);
     text-align: center;
     color: #288128;
 }
@@ -55,7 +55,7 @@ body a {
 }
 
 .main-heading-container {
-    width: Min(70%, 500px);
+    width: Min(80%, 900px);
     align-self: center;
 }
 
@@ -75,7 +75,7 @@ body a {
 }
 
 .lrg-text {
-    font-size: clamp(1.8rem, 4vw, 3.3rem);
+    font-size: clamp(1.8rem, 4vw, 3rem);
 }
 
 .small-txt {
@@ -98,7 +98,7 @@ body a {
 }
 
 .result-box {
-    width: Min(300px, 50%);
+    width: Min(700px, 80%);
     margin: 0 auto;
     text-align: center;
 }
@@ -119,3 +119,11 @@ body a {
     margin-right: 1rem;
 }
 
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.img-container {
+    width: 100%;
+}
