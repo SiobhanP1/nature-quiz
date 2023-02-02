@@ -35,22 +35,21 @@ let questions = [{
     }
 ];
 
-/*Event listeners */
 let checkAns = document.getElementById('check-ans-button');
 let nextQ = document.getElementById('next-q-button');
 
+/*Event listeners*/
 document.addEventListener('DOMContentLoaded', displayQuestion);
 checkAns.addEventListener('click', checkAnswer);
 nextQ.addEventListener('click', nextQuestion);
 
-/* 
-* The displayQuestion function is called upon initial loading of the page and each time 
-* a user clicks the Next Question button. It displays a new question with 
-* corresponding answer options taken from the questions bank array. The questionIndex
-* variable indicates the index number of the next question object in the array.
-*/
-let questionIndex = 0;
 
+let questionIndex = 0; //Indicates the index number of the current question object.
+
+/** 
+* Displays a new question with corresponding answer options taken from the questions 
+* array. 
+*/
 function displayQuestion() {
     if (questionIndex === questions.length) {
         displayEndingMsg();
