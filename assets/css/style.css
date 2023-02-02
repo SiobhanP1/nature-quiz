@@ -11,7 +11,7 @@ body {
 }
 
 h1, h2 {
-    font-size: clamp(2.3rem, 5vw, 3.5rem);
+    font-size: clamp(2.3rem, 5vw, 3.2rem);
     text-align: center;
     color: #288128;
 }
@@ -33,13 +33,15 @@ to position them to the right*/
 
 body a {
     text-decoration: none;
+    color: black;
 }
 
 .home-icon {
     display: inline-block;
     float: left;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 2rem;
+    margin-left: .5rem;
 }
 
 /*flexbox used to position and align main heading on home page*/
@@ -73,7 +75,7 @@ body a {
 }
 
 .lrg-text {
-    font-size: clamp(1.8rem, 4vw, 3.5rem);
+    font-size: clamp(1.8rem, 4vw, 3.3rem);
 }
 
 .small-txt {
