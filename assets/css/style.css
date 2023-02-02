@@ -91,7 +91,7 @@ body a {
     margin-top: 1rem;
 }
 
-.modal {
+.result-box {
     width: Min(300px, 50%);
     height: 300px;
     margin: 0 auto;

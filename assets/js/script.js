@@ -43,12 +43,16 @@ document.addEventListener('DOMContentLoaded', displayQuestion);
 checkAns.addEventListener('click', checkAnswer);
 nextQ.addEventListener('click', nextQuestion);
 
-/* Display first question */
+/* 
+* The displayQuestion function is called upon initial loading of the page and each time 
+* a user clicks the Next Question button. It displays a new question with 
+* corresponding answer options taken from the questions bank array. The questionIndex
+* variable indicates the index number of the next question object in the array.
+*/
 let questionIndex = 0;
 
 function displayQuestion() {
     if (questionIndex === questions.length) {
-        alert('end msg called');
         displayEndingMsg();
     } else {
 
@@ -64,33 +68,26 @@ function displayQuestion() {
     }
 }
 
-/* Check answer correct or not*/
-let correctAnswers = document.getElementById('current-total-correct').value;
-let incorrectAnswers = document.getElementById('current-total-incorrect').value;
-
+/**  
+* Checks the option selected by the user against the correct option in the questions array. 
+*/
 function checkAnswer() {
-
     if (document.getElementById('option-one').checked) {
         let userSelected = questions[questionIndex].option1;
-
         if (userSelected === questions[questionIndex].correctAnswer) {
             incrementCorrect();
         } else if (userSelected !== questions[questionIndex].correctAnswer) {
             incrementIncorrect();
         }
-
     } else if (document.getElementById('option-two').checked) {
         let userSelected = document.getElementById('option-two-text').innerText;
-
         if (userSelected === questions[questionIndex].correctAnswer) {
             incrementCorrect();
         } else {
             incrementIncorrect();
         }
-
     } else if (document.getElementById('option-three').checked) {
         let userSelected = document.getElementById('option-three-text').innerText;
-
         if (userSelected === questions[questionIndex].correctAnswer) {
             incrementCorrect();
         } else {
@@ -101,32 +98,44 @@ function checkAnswer() {
     }
 }
 
-
-/* Update scores */
+/** 
+ * Increments the correct answer score by 1. 
+ */ 
 function incrementCorrect() {
     let correctAnswers = parseInt(document.getElementById('current-total-correct').innerHTML);
     document.getElementById('current-total-correct').innerText = correctAnswers + 1;
     displayCorrect();
 }
 
+/**
+ * Increments the incorrect answer score by 1.
+ */
 function incrementIncorrect() {
     let incorrectAnswers = parseInt(document.getElementById('current-total-incorrect').innerHTML);
     document.getElementById('current-total-incorrect').innerText = incorrectAnswers + 1;
     displayIncorrect();
 }
 
-/* Display answer messages */
+/** 
+ * Displays a correct answer message on submission of a correct answer.
+ */
 function displayCorrect() {
     document.getElementById('correct').classList.remove('hidden');
     document.getElementById('next-q-button').classList.remove('hidden');
 }
 
+/**
+ * Displays an incorrect answer message on submission of an incorrect answer.
+ */
 function displayIncorrect() {
     document.getElementById('incorrect').classList.remove('hidden');
     document.getElementById('next-q-button').classList.remove('hidden');
 }
 
-/**Hide displayed answer messages, check answer button and clear radio boxes*/
+/**
+ * Hides displayed answer messages, the check answer button and clears the radio boxes
+ * before a new question is displayed. 
+ */
 function nextQuestion() {
     document.getElementById('correct').classList.add('hidden');
     document.getElementById('incorrect').classList.add('hidden');
@@ -140,6 +149,9 @@ function nextQuestion() {
     updateQuestionNumber();
 }
 
+/**
+ * Updates the displayed question number whenever a new question is displayed.
+ */
 function updateQuestionNumber() {
     let currentQNumber = parseInt(document.getElementById('current-q-number').innerHTML);
     if (currentQNumber < 5) {
@@ -147,14 +159,17 @@ function updateQuestionNumber() {
     }
 }
 
+/**
+ * Removes the displayed question and answers after a user submits their answer
+ * to the final question and then displays a message with the user's score.
+ */
 function displayEndingMsg() {
-    alert('msg called');
     document.getElementById('quiz-section').classList.add('hidden');
     document.getElementById('correct').classList.add('hidden');
     document.getElementById('incorrect').classList.add('hidden');
     document.getElementById('score-container').classList.add('hidden');
     document.getElementById('next-q-button').classList.add('hidden');
-    document.getElementById('result-modal').classList.remove('hidden');
+    document.getElementById('result').classList.remove('hidden');
 
     correctAnswers = parseInt(document.getElementById('current-total-correct').innerHTML);
     document.getElementById('final-score').innerText = correctAnswers;
