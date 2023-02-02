@@ -21,46 +21,54 @@
         </ul>
     </nav>
     <main id="main-container">
-    <h1>Quiz</h1>
-    <section id="quiz-section">
-        <div id="q-number-container">
-            <p>Question <span id="current-q-number">1</span> of 5.</p>
-        </div>
-        <div id="quiz-question">
-            <p id="current-question">Current Question</p>
-        </div>
-        <div id="answer-option-container">
-            <form action="">
-                <fieldset>
-                    <legend>Please choose an option.</legend>
-                    <input type="radio" id="option-one" name="answer-options" value="option-one">
-                    <label for="option-one"><span id="option-one-text">Option 1</span></label>
+        <header>
+            <h1 class="center">Quiz</h1>
+        </header>
+        <section id="quiz-section">
+            <div id="q-number-container" class="center">
+                <p class="small-txt">Question <span id="current-q-number">1</span> of 5.</p>
+            </div>
+            <div id="quiz-question" class="center">
+                <p id="current-question" class="lrg-text">Current Question</p>
+            </div>
+            <div id="answer-option-container" class="center">
+                <form action="">
+                    <fieldset>
+                        <legend class="small-txt">Please choose an option.</legend>
+                        <input type="radio" id="option-one" name="answer-options" value="option-one">
+                        <label for="option-one"><span id="option-one-text" class="medium-txt">Option 1</span></label>
 
-                    <input type="radio" id="option-two" name="answer-options" value="option-two">
-                    <label for="option-two"><span id="option-two-text">Option 2</span></label>
+                        <input type="radio" id="option-two" name="answer-options" value="option-two">
+                        <label for="option-two"><span id="option-two-text" class="medium-txt">Option 2</span></label>
 
-                    <input type="radio" id="option-three" name="answer-options" value="option-three">
-                    <label for="option-three"><span id="option-three-text">Option 3</span></label>
-                </fieldset>
-                
-            </form>
-            <button type="button" id="check-ans-button">Check Answer</button>
-        </div>
-    </section>
-    <section id="results-section">
-        <div id="correct" class="hidden"><p>Correct!</p></div>
-        <div id="incorrect" class="hidden"><p>Uh oh!</p></div>
-        <button type="button" id="next-q-button" class="hidden">Next Question</button>
-        <div id="score-container">
-            <p>Correct: <span id="current-total-correct">0</span> Incorrect: <span id="current-total-incorrect">0</span>
-            </p>
-        </div>
-        <div id="result-modal" class="hidden">
-            <h2>Well done!</h2>
-            <p>You answered <span id="final-score">0</span>of 5 questions correctly!</p>
-        </div>
-    </section>
-</main>
+                        <input type="radio" id="option-three" name="answer-options" value="option-three">
+                        <label for="option-three"><span id="option-three-text" class="medium-txt">Option
+                                3</span></label>
+                    </fieldset>
+
+                </form>
+                <button type="button" id="check-ans-button">Check Answer</button>
+            </div>
+        </section>
+        <section id="results-section">
+            <div id="correct" class="hidden center">
+                <p class="medium-txt">Correct!</p>
+            </div>
+            <div id="incorrect" class="hidden center">
+                <p class="medium-txt">Uh oh!</p>
+            </div>
+            <button type="button" id="next-q-button" class="hidden center">Next Question</button>
+            <div id="score-container" class="center">
+                <p class="small-txt">Correct: <span id="current-total-correct">0</span> Incorrect: <span
+                        id="current-total-incorrect">0</span>
+                </p>
+            </div>
+            <div id="result-modal" class="hidden">
+                <h2>Well done!</h2>
+                <p>You answered <span id="final-score">0</span>of 5 questions correctly!</p>
+            </div>
+        </section>
+    </main>
 
     <script src="assets/js/script.js"></script>
 

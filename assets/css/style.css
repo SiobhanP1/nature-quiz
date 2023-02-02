@@ -68,6 +68,24 @@ body a {
     display: none;
 }
 
+.center {
+    width: Max(500px, 70%);
+    text-align: center;
+    margin: 20px auto;
+}
+
+.lrg-text {
+    font-size: clamp(2rem, 4vw, 5rem);
+}
+
+.small-txt {
+    font-size: clamp(1.4rem, 1.4vw, 1.5rem);
+}
+
+.medium-txt {
+    font-size: clamp(1.7rem, 2.5vw, 3rem);
+}
+
 #main-container {
     position: relative;
 }
