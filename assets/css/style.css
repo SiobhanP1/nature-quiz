@@ -11,7 +11,8 @@ body {
 }
 
 h1, h2 {
-    font-size: 3rem;
+    font-size: clamp(2.3rem, 6vw, 5rem);
+    text-align: center;
 }
 
 .nav-bar {
@@ -49,19 +50,13 @@ body a {
 }
 
 .main-heading-container {
-    width: 50%;
+    width: Min(70%, 500px);
     align-self: center;
 }
 
 .quiz-button-container {
     align-self: center;
-    padding: .5rem; 
-    background-color: greenyellow; 
     width: 150px;
-}
-
-.start-quiz-button {
-    font-size: 1.2rem;
 }
 
 .hidden {
@@ -69,7 +64,7 @@ body a {
 }
 
 .center {
-    width: Max(500px, 70%);
+    width: Min(500px, 70%);
     text-align: center;
     margin: 20px auto;
 }
@@ -84,6 +79,16 @@ body a {
 
 .medium-txt {
     font-size: clamp(1.7rem, 2.5vw, 3rem);
+}
+
+.btn {
+    font-size: clamp(1.5rem, 1.7vw, 1.6rem);
+    padding: .4em;
+    border-radius: 5px;
+}
+
+.margin-top {
+    margin-top: 1rem;
 }
 
 #main-container {
