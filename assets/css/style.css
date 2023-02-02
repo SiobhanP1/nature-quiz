@@ -18,9 +18,10 @@ h1, h2 {
 
 .nav-bar {
     height: 2rem;
-
 }
 
+/*positioning for buttons in main navigation at top of page. float used
+to position them to the right*/
 .nav-button {
     font-size: 1.5rem;
     display: inline-block;
@@ -41,6 +42,7 @@ body a {
     line-height: 2rem;
 }
 
+/*flexbox used to position and align main heading on home page*/
 .main-container {
     float: none;
     display: flex;
@@ -95,9 +97,7 @@ body a {
 
 .result-box {
     width: Min(300px, 50%);
-    height: 300px;
     margin: 0 auto;
-    padding: 1rem;
     text-align: center;
 }
 
