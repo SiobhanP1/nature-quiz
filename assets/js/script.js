@@ -126,9 +126,11 @@ function displayCorrect() {
 }
 
 /**
- * Displays an incorrect answer message on submission of an incorrect answer.
+ * Displays an incorrect answer message which shares the correct answer with the
+ * user on submission of an incorrect answer.
  */
 function displayIncorrect() {
+    document.getElementById('correct-answer').innerText = questions[questionIndex].correctAnswer;
     document.getElementById('incorrect').classList.remove('hidden');
     document.getElementById('next-q-button').classList.remove('hidden');
 }
