@@ -71,6 +71,7 @@ function displayQuestion() {
 */
 function checkAnswer() {
     if (document.getElementById('option-one').checked) {
+        document.getElementById('check-ans-button').classList.add('hidden');
         let userSelected = questions[questionIndex].option1;
         if (userSelected === questions[questionIndex].correctAnswer) {
             incrementCorrect();
@@ -78,6 +79,7 @@ function checkAnswer() {
             incrementIncorrect();
         }
     } else if (document.getElementById('option-two').checked) {
+        document.getElementById('check-ans-button').classList.add('hidden');
         let userSelected = document.getElementById('option-two-text').innerText;
         if (userSelected === questions[questionIndex].correctAnswer) {
             incrementCorrect();
@@ -85,6 +87,7 @@ function checkAnswer() {
             incrementIncorrect();
         }
     } else if (document.getElementById('option-three').checked) {
+        document.getElementById('check-ans-button').classList.add('hidden');
         let userSelected = document.getElementById('option-three-text').innerText;
         if (userSelected === questions[questionIndex].correctAnswer) {
             incrementCorrect();
@@ -144,6 +147,7 @@ function nextQuestion() {
     }
     questionIndex++;
     displayQuestion();
+    document.getElementById('check-ans-button').classList.remove('hidden');
     updateQuestionNumber();
 }
 
