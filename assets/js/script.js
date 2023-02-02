@@ -1,3 +1,4 @@
+//Array containing quiz questions with corresponding answer options.
 let questions = [{
         'question': 'Which bird is famously intelligent and known to remember humans that help it?',
         'option1': 'Robin',
@@ -38,11 +39,9 @@ let questions = [{
 let checkAns = document.getElementById('check-ans-button');
 let nextQ = document.getElementById('next-q-button');
 
-/*Event listeners*/
 document.addEventListener('DOMContentLoaded', displayQuestion);
 checkAns.addEventListener('click', checkAnswer);
 nextQ.addEventListener('click', nextQuestion);
-
 
 let questionIndex = 0; //Indicates the index number of the current question object.
 
