@@ -129,5 +129,6 @@ function updateQuestionNumber() {
 }
 
 function displayEndingMsg() {
-
+    document.getElementById('result-modal').classList.remove('hidden');
+    document.getElementById('final-score').innerText = correctAnswers.value;
 }

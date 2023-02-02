@@ -20,6 +20,7 @@
             <li class="nav-button"><a href="index.html" aria-label="Go to home page">Home</a></li>
         </ul>
     </nav>
+    <main id="main-container">
     <h1>Quiz</h1>
     <section id="quiz-section">
         <div id="q-number-container">
@@ -54,7 +55,12 @@
             <p>Correct: <span id="current-total-correct">0</span> Incorrect: <span id="current-total-incorrect">0</span>
             </p>
         </div>
+        <div id="result-modal" class="hidden">
+            <h2>Well done!</h2>
+            <p>You answered <span id="final-score">0</span>of 5 questions correctly!</p>
+        </div>
     </section>
+</main>
 
     <script src="assets/js/script.js"></script>
 
