@@ -11,6 +11,27 @@ let questions = [{
         'option2': 'Bees',
         'option3': 'Cats',
         'correctAnswer': 'Bees'
+    },
+    {
+        'question': 'Question3?',
+        'option1': 'Birds',
+        'option2': 'Bees',
+        'option3': 'Cats',
+        'correctAnswer': 'Bees'
+    },
+    {
+        'question': 'Question4?',
+        'option1': 'Birds',
+        'option2': 'Bees',
+        'option3': 'Cats',
+        'correctAnswer': 'Bees'
+    },
+    {
+        'question': 'question5?',
+        'option1': 'Birds',
+        'option2': 'Bees',
+        'option3': 'Cats',
+        'correctAnswer': 'Bees'
     }
 ];
 
@@ -26,9 +47,11 @@ nextQ.addEventListener('click', nextQuestion);
 let questionIndex = 0;
 
 function displayQuestion() {
-    if (questionIndex > questions.length) {
+    if (questionIndex === questions.length) {
+        alert('end msg called');
         displayEndingMsg();
     } else {
+
         let currentQuestion = document.getElementById('current-question');
         let optionOne = document.getElementById('option-one-text');
         let optionTwo = document.getElementById('option-two-text');
@@ -125,6 +148,14 @@ function updateQuestionNumber() {
 }
 
 function displayEndingMsg() {
+    alert('msg called');
+    document.getElementById('quiz-section').classList.add('hidden');
+    document.getElementById('correct').classList.add('hidden');
+    document.getElementById('incorrect').classList.add('hidden');
+    document.getElementById('score-container').classList.add('hidden');
+    document.getElementById('next-q-button').classList.add('hidden');
     document.getElementById('result-modal').classList.remove('hidden');
-    document.getElementById('final-score').innerText = correctAnswers.value;
+
+    correctAnswers = parseInt(document.getElementById('current-total-correct').innerHTML);
+    document.getElementById('final-score').innerText = correctAnswers;
 }
