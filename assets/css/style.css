@@ -26,6 +26,18 @@ h1, h2 {
     height: 2rem;
 }
 
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.no-float {
+    float: none;
+}
+
 /*positioning for buttons in main navigation at top of page. float used
 to position them to the right*/
 .nav-button {
@@ -135,6 +147,10 @@ body a {
 
 .pink {
     color: #cf26aa;
+}
+
+.green {
+    color: #0b6a1b;
 }
 
 .dk-gray {

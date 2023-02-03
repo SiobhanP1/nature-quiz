@@ -22,10 +22,15 @@
     </nav>
     <main id="main-container">
         <header>
-            <h1 class="center">Irish Wildlife Quiz</h1>
+            <h1 class="center green">Wildlife Quiz</h1>
         </header>
         <!--The section containing the quiz question and answers begins here-->
         <section id="quiz-section">
+            <div id="score-container" class="center">
+                <p class="small-txt float-left">Correct: <span id="current-total-correct">0</span></p>
+                <p class="small-txt float-right">Incorrect: <span id="current-total-incorrect">0</span>
+                </p>
+            </div>
             <div id="q-number-container" class="center">
                 <p class="small-txt">Question <span id="current-question-number">1</span> of 5.</p>
             </div>
@@ -66,11 +71,6 @@
             </div>
             <div class="center">
                 <button type="button" id="next-question-button" class="hidden btn">Next Question</button>
-            </div>
-            <div id="score-container" class="center">
-                <p class="small-txt">Correct: <span id="current-total-correct">0</span> Incorrect: <span
-                        id="current-total-incorrect">0</span>
-                </p>
             </div>
             <div id="result" class="hidden result-box">
                 <h2 class="lrg-txt pink">Well done!</h2>
