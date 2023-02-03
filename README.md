@@ -28,19 +28,27 @@ that I know where there are gaps in my knowledge and I can decide to learn more.
 
 The navigation bar at the top of each page contains links to both pages, as well as an icon leading to the home page. All links remain visible at the top of the page while the user is on the site.
 
-### Call to Action Button
+<img src="./docs/navigation-at-top-of-page.png" alt="Navigation links at top of home and quiz pages." width=400>
+
+### 'Take Quiz' Call to Action Button
 
 The 'Take Quiz' button on the home page is centrally located immediately beneath the main heading. It is in a color that strongly contrasts with the background in order to draw the user's attention to it. Clicking on it brings the user directly to the first question on the quiz page.
+
+<img src="./docs/take-quiz-button.png" alt="Take quiz button on home page." width=400>
 
 ### Quiz Question
 
 The quiz question is located in the center of the quiz page in large font. The first question is displayed
 when the quiz page loads.
 
+<img src="./docs/quiz-question.png" alt="Quiz question displayed on quiz page." width=400>
+
 ### Answer Options
 
 For every question, three possible answer options are displayed next to radio buttons. The user selects
 an option then clicks on the Check Answer button immediately beneath the options. 
+
+<img src="./docs/radio-button-answer-options.png" alt="Radio button answer options on quiz page." width=400>
 
 ### 'Correct' and 'Incorrect' Answer Messages
 
@@ -48,23 +56,33 @@ When the user selects the correct answer and then clicks 'Check Answer', a 'Corr
 displayed. When the user selects an incorrect answer and then clicks 'Check Answer', an 'Incorrect' 
 message is displayed. The 'Incorrect' message also displays the correct answer for that question.
 
+<img src="./docs/correct-answer-message.png" alt="Message displayed on choosing the correct answer." width=400>
+
 ### Score
 
 The current score is displayed above the question section. It shows the number of correct and incorrect answers at that moment. The score resets to zero every time the quiz starts from the beginning.
+
+<img src="./docs/current-score.png" alt="Curent score display on quiz page." width=400>
 
 ### Question Number
 
 The current question number and total number of questions are displayed above the question. The user 
 knows how many questions remain before the end of the quiz. 
 
+<img src="./docs/question-number.png" alt="Question number displayed on quiz page." width=400>
+
 ### 'Next Question' Button
 
 The 'Next Question' button becomes visible whenever the user checks an answer. Clicking the 'Next Question' button removes the old question and displays a new question and new set of answer options. 
+
+<img src="./docs/next-question-button.png" alt="Button that displays the next question when clicked." width=250>
 
 ### End of Quiz Message and Final Score
 
 On checking the answer to the final question, the user is shown a 'Well done' message which also 
 shows their final score. 
+
+<img src="./docs/final-score-message.png" alt="Message containing final score at end of quiz." width=400>
 
 ## Future Features
 
