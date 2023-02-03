@@ -107,10 +107,13 @@ meet WCAG AA Color Contrast requirements.
 
 ### Code Validation
 
+Add validation info here
 
 ### Test Cases
 
 #### Quiz
+
+Add test case images from site
 
 1. Open the Home Page. The user is shown the main heading. The user notices the 'Take Quiz' button under the heading.
 2. Click on 'Take Quiz'. The user is directed to the Quiz Page. The user notices the first quiz 
@@ -124,13 +127,48 @@ question.
 9. Click on 'Next Question'. The user notices a 'Well done' message appear with their final score.
 10. Read the message and final score.
 
-
 ### Fixed Bugs
+
+Add one more fixed bug?
+
+* One of the radio button and label answer option pairs split onto separate lines when viewing on 
+a small mobile screen. This was fixed by enclosing each radio button and label pair in a span 
+and giving each a property of display: inline-block.
+
 ### Supported Screens and Browsers
 
+Add devices it has been tested on
+
+* The site was designed mobile-first. Responsive units were used for positioning and sizing
+throughout, with few exceptions.
+* The website has not been tested on browsers other than Chrome.
+
 ## Deployment
+
 ### Via Gitpod
+
+Follow the following steps to open up the site in Gitpod:
+
+1. Go to the site https://github.com/ in a browser.
+2. Open the 'SiobhanP1/nature-quiz' repository.
+3. Click on the 'Gitpod' button to open up a workspace.
+4. In the terminal, enter the command `python3 -m http.server`.
+5. A small window will pop up. 
+6. Select 'Open in browser' to open the site in a new tab.
+
 ### Via Github Pages
+
+This site was deployed via Github Pages by doing the following:
+
+1. Open the 'SiobhanP1/nature-quiz' repository in Github.
+2. Select 'Settings'. 
+3. Select 'Pages' from the sidebar.
+4. Go to the Source drop-down menu and select the 'Deploy from Branch' option.
+5. On the Branch drop-down menu, select 'Main'.
+6. Click on the 'Save' button.
+7. Wait, then refresh the page to see the site link.
+
+The live link is ...
 
 ## Credits
 ### Images
