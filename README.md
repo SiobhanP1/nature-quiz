@@ -104,8 +104,27 @@ meet WCAG AA Color Contrast requirements.
 * Font Awesome was used to source an icon for the home link in the navigation bar.
 
 ## Testing
+
 ### Code Validation
+
+
 ### Test Cases
+
+#### Quiz
+
+1. Open the Home Page. The user is shown the main heading. The user notices the 'Take Quiz' button under the heading.
+2. Click on 'Take Quiz'. The user is directed to the Quiz Page. The user notices the first quiz 
+question.
+3. Read the question. The user notices the answer options below the question.
+4. Click on an answer option. The user notices the 'Check Answer' button below the answer options.
+5. Click on 'Check Answer'. The user notices an answer message. 
+6. Read the answer message. The user notices a 'Next Question' button.
+7. Click on 'Next Question'. The user notices a new question.
+8. Repeat steps 3-6 for each question.
+9. Click on 'Next Question'. The user notices a 'Well done' message appear with their final score.
+10. Read the message and final score.
+
+
 ### Fixed Bugs
 ### Supported Screens and Browsers
 
