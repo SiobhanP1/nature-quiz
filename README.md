@@ -91,9 +91,15 @@ meet WCAG AA Color Contrast requirements.
 
 ### Page 1 of 2: The Home Page
 
+<img src="./docs/home-pg-wireframe.png" alt="Wireframe of home page" width=600>
+
 ### Page 2 of 2: The Quiz Page
 
-### Pages 1 and 2 on a smaller mobile screen
+<img src="./docs/quiz-pg-wireframe.png" alt="Wireframe of quiz page" width=600>
+
+### The final score display on the quiz page
+
+<img src="./docs/final-score-display-wireframe.png" alt="Wireframe of final score message on quiz page" width=600>
 
 ## Technology
 
