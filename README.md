@@ -86,8 +86,22 @@ meet WCAG AA Color Contrast requirements.
 
 ## Wireframes
 
+### Page 1 of 2: The Home Page
+
+### Page 2 of 2: The Quiz Page
+
+### Pages 1 and 2 on a smaller mobile screen
 
 ## Technology
+
+* HTML was used to structure the pages and add features.
+* CSS was used to style the features on both pages.
+* JavaScript was used to add interactivity to the quiz page.
+* Justinmind was used to create wireframes.
+* Github was used to store code and to deploy the site.
+* Gitpod was used to write and edit the code.
+* Chrome DevTools was used to test the site for responsivity and detect errors.
+* Font Awesome was used to source an icon for the home link in the navigation bar.
 
 ## Testing
 ### Code Validation
