@@ -13,25 +13,25 @@
 
 <body class="background-image">
     <nav class="nav-bar">
-        <p class="home-icon"><a href="index.html" aria-label="Go to home page"><i
+        <p class="home-icon float-left"><a href="index.html" aria-label="Go to home page"><i
                     class="fa-brands fa-pagelines"></i></a></p>
         <ul>
             <li class="nav-button"><a href="quiz.html" aria-label="Go to quiz page">Quiz</a></li>
             <li class="nav-button"><a href="index.html" aria-label="Go to home page">Home</a></li>
         </ul>
     </nav>
-    <main id="main-container">
+    <main id="main-container" class="nav-margin">
         <header>
             <h1 class="center green">Wildlife Quiz</h1>
         </header>
         <!--The section containing the quiz question and answers begins here-->
         <section id="quiz-section">
             <div id="score-container" class="center">
-                <p class="small-txt float-left">Correct: <span id="current-total-correct">0</span></p>
-                <p class="small-txt float-right">Incorrect: <span id="current-total-incorrect">0</span>
+                <p class="small-txt float-left pink bold">Correct: <span id="current-total-correct">0</span></p>
+                <p class="small-txt float-right orange bold">Incorrect: <span id="current-total-incorrect">0</span>
                 </p>
             </div>
-            <div id="q-number-container" class="center">
+            <div id="q-number-container" class="center no-float">
                 <p class="small-txt">Question <span id="current-question-number">1</span> of 5.</p>
             </div>
             <div id="quiz-question" class="center">
@@ -44,16 +44,16 @@
                         </legend>
                         <span class="option-label-group">
                             <input type="radio" id="option-one" name="answer-options" value="option-one">
-                            <label for="option-one"><span id="option-one-text" class="medium-txt bold margin-rt">Option
+                            <label for="option-one"><span id="option-one-text" class="medium-txt bold margin-rt dk-gray">Option
                                     1</span></label></span>
 
                         <span class="option-label-group">
                             <input type="radio" id="option-two" name="answer-options" value="option-two">
-                            <label for="option-two"><span id="option-two-text" class="medium-txt bold margin-rt">Option
+                            <label for="option-two"><span id="option-two-text" class="medium-txt bold margin-rt dk-gray">Option
                                     2</span></label></span>
                         <span class="option-label-group">
                             <input type="radio" id="option-three" name="answer-options" value="option-three">
-                            <label for="option-three"><span id="option-three-text" class="medium-txt bold">Option
+                            <label for="option-three"><span id="option-three-text" class="medium-txt bold dk-gray">Option
                                     3</span></label></span>
                     </fieldset>
 
@@ -73,13 +73,9 @@
                 <button type="button" id="next-question-button" class="hidden btn">Next Question</button>
             </div>
             <div id="result" class="hidden result-box">
-                <h2 class="lrg-txt pink">Well done!</h2>
+                <h2 class="lrg-txt dk-gray">Well done!</h2>
                 <p class="medium-txt margin-top">You answered <span id="final-score">0</span> of 5 questions correctly!
                 </p>
-                <div class="img-container margin-top">
-                    <img class="image" src="assets/images/happy-sheep.jpg" alt="Two sheep on a mountain." width="1920"
-                        height="1280">
-                </div>
             </div>
         </section>
     </main>

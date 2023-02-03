@@ -35,7 +35,7 @@ h1, h2 {
 }
 
 .no-float {
-    float: none;
+    clear: both;
 }
 
 /*positioning for buttons in main navigation at top of page. float used
@@ -54,7 +54,6 @@ body a {
 }
 
 .home-icon {
-    float: left;
     font-size: 1.7rem;
     line-height: 2rem;
     margin-left: .5rem;
@@ -100,7 +99,7 @@ body a {
 }
 
 .lrg-text {
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(1.6rem, 4vw, 3rem);
 }
 
 .small-txt {
@@ -129,6 +128,10 @@ body a {
 
 .margin-rt {
     margin-right: 1rem;
+}
+
+.nav-margin {
+    margin-top: 4rem;
 }
 
 .result-box {
