@@ -12,14 +12,14 @@ body, html {
 }
 
 body {
-    color: #0000f0;
+    color: #333333;
     font-family: 'Fredoka', sans-serif;
 }
 
 h1, h2 {
     font-size: clamp(2.3rem, 5vw, 3rem);
     text-align: center;
-    color: #288128;
+    color: white;
 }
 
 .nav-bar {
@@ -159,6 +159,14 @@ body a {
 
 .dk-gray {
     color: #333333;
+}
+
+.dk-blue {
+    color: #000055;
+}
+
+.white {
+    color: white;
 }
 
 .image {
