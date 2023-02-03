@@ -61,7 +61,7 @@ body a {
 
 .background-image {
     background-color: aqua;
-    background-image: url("/assets/images/dew-on-grass-medium.jpg");
+    background-image: url("../images/dew-on-grass-medium.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
