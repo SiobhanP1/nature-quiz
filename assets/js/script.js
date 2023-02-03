@@ -36,19 +36,23 @@ const QUIZ_QUESTIONS = [{
     }
 ];
 
-let checkAnswerButton = document.getElementById("check-answer-button");
-let nextQuestionButton = document.getElementById("next-question-button");
-
-document.addEventListener("DOMContentLoaded", displayQuestion);
-checkAnswerButton.addEventListener("click", checkAnswer);
-nextQuestionButton.addEventListener("click", nextQuestion);
-
 let questionIndex = 0; //Indicates the index number of the current question object.
 
+/**
+ * Calls the displayQuestion function on initial loading of the page.
+ */
+function beginQuiz() {
+    let checkAnswerButton = document.getElementById("check-answer-button");
+    let nextQuestionButton = document.getElementById("next-question-button");
+    checkAnswerButton.addEventListener("click", checkAnswer);
+    nextQuestionButton.addEventListener("click", nextQuestion);
+    displayQuestion();
+}
+
 /** 
-* Displays a new question with corresponding answer options taken from the questions 
-* array. 
-*/
+ * Displays a new question with corresponding answer options taken from the questions 
+ * array. 
+ */
 function displayQuestion() {
     if (questionIndex === QUIZ_QUESTIONS.length) {
         displayEndingMsg();
@@ -67,8 +71,8 @@ function displayQuestion() {
 }
 
 /**  
-* Checks the option selected by the user against the correct option in the questions array. 
-*/
+ * Checks the option selected by the user against the correct option in the questions array. 
+ */
 function checkAnswer() {
     if (document.getElementById("option-one").checked) {
         document.getElementById("check-answer-button").classList.add("hidden");
@@ -101,7 +105,7 @@ function checkAnswer() {
 
 /** 
  * Increments the correct answer score by 1. 
- */ 
+ */
 function incrementCorrect() {
     let correctAnswers = parseInt(document.getElementById("current-total-correct").innerHTML);
     document.getElementById("current-total-correct").innerText = correctAnswers + 1;
@@ -178,3 +182,5 @@ function displayEndingMsg() {
     correctAnswers = parseInt(document.getElementById("current-total-correct").innerHTML);
     document.getElementById("final-score").innerText = correctAnswers;
 }
+
+document.addEventListener('DOMContentLoaded', beginQuiz);
