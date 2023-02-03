@@ -168,7 +168,7 @@ This site was deployed via Github Pages by doing the following:
 6. Click on the 'Save' button.
 7. Wait, then refresh the page to see the site link.
 
-The live link is ...
+The live link is https://siobhanp1.github.io/nature-quiz/quiz.html.
 
 ## Credits
 ### Images
