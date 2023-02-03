@@ -85,7 +85,8 @@ function getUserAnswer() {
         userSelected = document.getElementById("option-three-text").innerText;
         checkUserAnswer();
     } else {
-        alert("Please choose an option.");
+        document.getElementById("choose-option-message").classList.add("orange");
+        document.getElementById("choose-option-message").classList.add("bold");
     }
 }
 

@@ -97,6 +97,10 @@ body a {
     margin-top: 1rem;
 }
 
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+
 .result-box {
     width: Min(700px, 80%);
     margin: 0 auto;
