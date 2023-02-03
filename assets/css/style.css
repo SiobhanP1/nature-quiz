@@ -103,8 +103,8 @@ body a {
     font-size: clamp(1.5rem, 1.7vw, 1.6rem);
     padding: .4em;
     border-radius: 5px;
-    /*border: #288128 solid 2px;*/
     background-color: #cf4a02;
+    color: white;
 }
 
 .margin-top {
@@ -113,6 +113,10 @@ body a {
 
 .margin-bottom {
     margin-bottom: 1rem;
+}
+
+.margin-rt {
+    margin-right: 1rem;
 }
 
 .result-box {
@@ -133,8 +137,8 @@ body a {
     color: #cf26aa;
 }
 
-.margin-rt {
-    margin-right: 1rem;
+.dk-gray {
+    color: #333333;
 }
 
 .image {
