@@ -136,7 +136,7 @@ body a {
 
 .result-box {
     width: Min(700px, 80%);
-    margin: 0 auto;
+    margin: 30vh auto;
     text-align: center;
 }
 

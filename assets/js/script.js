@@ -176,6 +176,7 @@ function displayEndingMsg() {
     document.getElementById("incorrect").classList.add("hidden");
     document.getElementById("score-container").classList.add("hidden");
     document.getElementById("next-question-button").classList.add("hidden");
+    document.getElementById("main-heading-container").classList.add("hidden");
     document.getElementById("result").classList.remove("hidden");
 
     correctAnswers = parseInt(document.getElementById("current-total-correct").innerHTML);
