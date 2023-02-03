@@ -37,6 +37,7 @@ const QUIZ_QUESTIONS = [{
 ];
 
 let questionIndex = 0; //Indicates the index number of the current question object.
+let userSelected; //Variable to store the answer option selected by the user.
 
 /**
  * Calls the displayQuestion function on initial loading of the page.
@@ -44,7 +45,7 @@ let questionIndex = 0; //Indicates the index number of the current question obje
 function beginQuiz() {
     let checkAnswerButton = document.getElementById("check-answer-button");
     let nextQuestionButton = document.getElementById("next-question-button");
-    checkAnswerButton.addEventListener("click", checkAnswer);
+    checkAnswerButton.addEventListener("click", getUserAnswer);
     nextQuestionButton.addEventListener("click", nextQuestion);
     displayQuestion();
 }
@@ -73,33 +74,30 @@ function displayQuestion() {
 /**  
  * Checks the option selected by the user against the correct option in the questions array. 
  */
-function checkAnswer() {
+function getUserAnswer() {
     if (document.getElementById("option-one").checked) {
-        document.getElementById("check-answer-button").classList.add("hidden");
-        let userSelected = QUIZ_QUESTIONS[questionIndex].option1;
-        if (userSelected === QUIZ_QUESTIONS[questionIndex].correctAnswer) {
-            incrementCorrect();
-        } else if (userSelected !== QUIZ_QUESTIONS[questionIndex].correctAnswer) {
-            incrementIncorrect();
-        }
+        userSelected = QUIZ_QUESTIONS[questionIndex].option1;
+        checkUserAnswer();
     } else if (document.getElementById("option-two").checked) {
-        document.getElementById("check-answer-button").classList.add("hidden");
-        let userSelected = document.getElementById("option-two-text").innerText;
-        if (userSelected === QUIZ_QUESTIONS[questionIndex].correctAnswer) {
-            incrementCorrect();
-        } else {
-            incrementIncorrect();
-        }
+        userSelected = document.getElementById("option-two-text").innerText;
+        checkUserAnswer();
     } else if (document.getElementById("option-three").checked) {
-        document.getElementById("check-answer-button").classList.add("hidden");
-        let userSelected = document.getElementById("option-three-text").innerText;
-        if (userSelected === QUIZ_QUESTIONS[questionIndex].correctAnswer) {
-            incrementCorrect();
-        } else {
-            incrementIncorrect();
-        }
+        userSelected = document.getElementById("option-three-text").innerText;
+        checkUserAnswer();
     } else {
         alert("Please choose an option.");
+    }
+}
+
+/**
+ * checks the user answer against the correct answer and calls the appropriate increment score function.
+ */
+function checkUserAnswer() {
+    document.getElementById("check-answer-button").classList.add("hidden");
+    if (userSelected === QUIZ_QUESTIONS[questionIndex].correctAnswer) {
+        incrementCorrect();
+    } else if (userSelected !== QUIZ_QUESTIONS[questionIndex].correctAnswer) {
+        incrementIncorrect();
     }
 }
 
