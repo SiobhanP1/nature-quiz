@@ -37,7 +37,7 @@ const QUIZ_QUESTIONS = [{
 ];
 
 let questionIndex = 0; //Indicates the index number of the current question object.
-let userSelected; //Variable to store the answer option selected by the user.
+let userSelection = null; //Variable to store the answer option selected by the user.
 
 /**
  * Calls the displayQuestion function on initial loading of the page.
@@ -76,13 +76,13 @@ function displayQuestion() {
  */
 function getUserAnswer() {
     if (document.getElementById("option-one").checked) {
-        userSelected = QUIZ_QUESTIONS[questionIndex].option1;
+        userSelection = QUIZ_QUESTIONS[questionIndex].option1;
         checkUserAnswer();
     } else if (document.getElementById("option-two").checked) {
-        userSelected = document.getElementById("option-two-text").innerText;
+        userSelection = document.getElementById("option-two-text").innerText;
         checkUserAnswer();
     } else if (document.getElementById("option-three").checked) {
-        userSelected = document.getElementById("option-three-text").innerText;
+        userSelection = document.getElementById("option-three-text").innerText;
         checkUserAnswer();
     } else {
         document.getElementById("choose-option-message").classList.add("orange");
@@ -95,9 +95,9 @@ function getUserAnswer() {
  */
 function checkUserAnswer() {
     document.getElementById("check-answer-button").classList.add("hidden");
-    if (userSelected === QUIZ_QUESTIONS[questionIndex].correctAnswer) {
+    if (userSelection === QUIZ_QUESTIONS[questionIndex].correctAnswer) {
         incrementCorrect();
-    } else if (userSelected !== QUIZ_QUESTIONS[questionIndex].correctAnswer) {
+    } else if (userSelection !== QUIZ_QUESTIONS[questionIndex].correctAnswer) {
         incrementIncorrect();
     }
 }
