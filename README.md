@@ -56,7 +56,7 @@ knows how many questions remain before the end of the quiz.
 
 ### 'Next Question' Button
 
-The 'Next Question' button becomes visible whenever the user checks an answer. Clicking the 'Next Question' button removes the old question and displays a new question and set of answer options. 
+The 'Next Question' button becomes visible whenever the user checks an answer. Clicking the 'Next Question' button removes the old question and displays a new question and new set of answer options. 
 
 ### End of Quiz Message and Final Score
 
@@ -64,8 +64,29 @@ On checking the answer to the final question, the user is shown a 'Well done' me
 shows their final score. 
 
 ## Future Features
+
+* Multiple quiz levels (easy, medium, difficult) available to the user.
+* A 'Create Username' feature.
+* A 'Save Score' option for the user.
+
 ## Typography and Color Schemes
+
+### Typography
+
+
+
+### Color Schemes
+
+* Green is used as the main color throughout the site and in the background image on both pages. 
+It was chosen because of a strong association with wildlife and nature, the main theme of the quiz.
+* Orange is used on buttons to draw attention to them due to a strong contrast with green. 
+* Background and foreground color combinations have been checked where possible to ensure they 
+meet WCAG AA Color Contrast requirements. 
+* Color contrast was checked using [Web AIM](https://webaim.org/resources/contrastchecker/). Not all combinations could be checked due to the background image. 
+
 ## Wireframes
+
+
 ## Technology
 
 ## Testing
