@@ -24,6 +24,7 @@ h1, h2 {
 
 .nav-bar {
     height: 2rem;
+    margin-top: .3rem;
 }
 
 .float-left {
@@ -60,7 +61,7 @@ body a {
 }
 
 .background-image {
-    background-color: aqua;
+    background-color: #74db1f;
     background-image: url("../images/dew-on-grass-medium.jpg");
     background-position: center;
     background-repeat: no-repeat;
