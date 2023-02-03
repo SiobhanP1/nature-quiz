@@ -8,13 +8,10 @@
     <meta name="description" content="A quiz about Irish wildlife for children aged 7-11 years.">
     <meta name="keywords" content="nature, Ireland, Irish, wildlife, quiz, children, national school">
     <link href="assets/css/style.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
-    </style>
     <title>Irish Wildlife Quiz</title>
 </head>
 
-<body>
+<body class="background-image">
     <nav class="nav-bar">
         <p class="home-icon"><a href="index.html" aria-label="Go to home page"><i
                     class="fa-brands fa-pagelines"></i></a></p>
@@ -38,18 +35,21 @@
             <div id="answer-option-container" class="center">
                 <form action="">
                     <fieldset>
-                        <legend id="choose-option-message" class="small-txt margin-bottom">Please choose an option.</legend>
-                        <input type="radio" id="option-one" name="answer-options" value="option-one">
-                        <label for="option-one"><span id="option-one-text" class="medium-txt bold margin-rt">Option
-                                1</span></label>
+                        <legend id="choose-option-message" class="small-txt margin-bottom">Please choose an option.
+                        </legend>
+                        <span class="option-label-group">
+                            <input type="radio" id="option-one" name="answer-options" value="option-one">
+                            <label for="option-one"><span id="option-one-text" class="medium-txt bold margin-rt">Option
+                                    1</span></label></span>
 
-                        <input type="radio" id="option-two" name="answer-options" value="option-two">
-                        <label for="option-two"><span id="option-two-text" class="medium-txt bold margin-rt">Option
-                                2</span></label>
-
-                        <input type="radio" id="option-three" name="answer-options" value="option-three">
-                        <label for="option-three"><span id="option-three-text" class="medium-txt bold">Option
-                                3</span></label>
+                        <span class="option-label-group">
+                            <input type="radio" id="option-two" name="answer-options" value="option-two">
+                            <label for="option-two"><span id="option-two-text" class="medium-txt bold margin-rt">Option
+                                    2</span></label></span>
+                        <span class="option-label-group">
+                            <input type="radio" id="option-three" name="answer-options" value="option-three">
+                            <label for="option-three"><span id="option-three-text" class="medium-txt bold">Option
+                                    3</span></label></span>
                     </fieldset>
 
                 </form>
@@ -84,10 +84,10 @@
         </section>
     </main>
 
-    <script src="assets/js/script.js"></script>
-
     <!--Font Awesome icons link-->
     <script src="https://kit.fontawesome.com/6189b95449.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

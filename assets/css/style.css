@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
 * {
     margin: 0;
     border: none;
     padding: 0;
     box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
 }
 
 body {
@@ -24,7 +30,6 @@ h1, h2 {
 to position them to the right*/
 .nav-button {
     font-size: 1.5rem;
-    display: inline-block;
     float: right;
     line-height: 2rem;
     margin: 0 1rem;
@@ -33,15 +38,23 @@ to position them to the right*/
 
 body a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .home-icon {
-    display: inline-block;
     float: left;
     font-size: 1.7rem;
     line-height: 2rem;
     margin-left: .5rem;
+}
+
+.background-image {
+    background-color: aqua;
+    background-image: url("/assets/images/dew-on-grass-medium.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 /*flexbox used to position and align main heading on home page*/
@@ -90,7 +103,8 @@ body a {
     font-size: clamp(1.5rem, 1.7vw, 1.6rem);
     padding: .4em;
     border-radius: 5px;
-    border: #288128 solid 2px;
+    /*border: #288128 solid 2px;*/
+    background-color: #cf4a02;
 }
 
 .margin-top {
@@ -130,4 +144,8 @@ body a {
 
 .img-container {
     width: 100%;
+}
+
+.option-label-group {
+    display: inline-block;
 }
