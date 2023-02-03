@@ -2,6 +2,9 @@
 
 ## Purpose
 
+<img src="./docs/home-pg-ipad-frame-screenshot.png" alt="Screenshot of nature quiz website home page on an ipad" width=250>
+<img src="./docs/home-pg-mobile-frame-screenshot.png" alt="Screenshot of nature quiz website home page on a mobile phone" width=100>
+
 The purpose of the Nature Quiz website is to:
 * provide a fun and interactive way for users to test their knowledge of wildlife in Ireland.
 * develop curiosity in users about wildlife in Ireland.
@@ -113,7 +116,14 @@ Add validation info here
 
 #### Quiz
 
-Add test case images from site
+<img src="./docs/home-pg-mobile-screenshot.png" alt="Home page" width=250>
+<img src="./docs/quiz-pg-first-question-screenshot.png" alt="Quiz page showing first question" width=250>
+<img src="./docs/quiz-pg-select-answer-screenshot.png" alt="Quiz page showing answer selected" width=250>
+<img src="./docs/quiz-pg-result-correct-screenshot.png" alt="Quiz page showing correct answer message" width=250>
+<img src="./docs/quiz-pg-next-question-screenshot.png" alt="Quiz page showing second question" width=250>
+<img src="./docs/quiz-pg-q2-incorrect-screenshot.png" alt="Quiz page showing incorrect answer message" width=250>
+<img src="./docs/quiz-pg-final-result-msg-screenshot.png" alt="Quiz page showing final result" width=250>
+
 
 1. Open the Home Page. The user is shown the main heading. The user notices the 'Take Quiz' button under the heading.
 2. Click on 'Take Quiz'. The user is directed to the Quiz Page. The user notices the first quiz 
@@ -173,7 +183,7 @@ The live link is https://siobhanp1.github.io/nature-quiz/quiz.html.
 ## Credits
 ### Images
 
-* The image of the [two sheep](https://unsplash.com/photos/QhvnOP-4DVU), shown with the quiz result on the quiz page, was taken from [Unsplash](https://unsplash.com/).
+* The background image of [dew on grass](https://pixabay.com/photos/grass-morning-dew-bokeh-green-3743023/) on both the home and quiz pages was taken from [Pixabay](https://pixabay.com/).
 
 
 

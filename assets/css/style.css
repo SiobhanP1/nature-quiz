@@ -60,6 +60,7 @@ body a {
     margin-left: .5rem;
 }
 
+/*Full screen background image on both home and quiz pages*/
 .background-image {
     background-color: #74db1f;
     background-image: url("../images/dew-on-grass-medium.jpg");
@@ -111,6 +112,7 @@ body a {
     font-size: clamp(1.6rem, 2.5vw, 3rem);
 }
 
+/* all buttons have white text on an orange background */
 .btn {
     font-size: clamp(1.5rem, 1.7vw, 1.6rem);
     padding: .4em;
@@ -147,14 +149,6 @@ body a {
 
 .orange {
     color: #bf4808;
-}
-
-.pink {
-    color: #cf26aa;
-}
-
-.green {
-    color: #0b6a1b;
 }
 
 .dk-gray {

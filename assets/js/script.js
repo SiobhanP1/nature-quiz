@@ -146,9 +146,9 @@ function nextQuestion() {
     document.getElementById("correct").classList.add("hidden");
     document.getElementById("incorrect").classList.add("hidden");
     document.getElementById("next-question-button").classList.add("hidden");
-    let radiobuttons = document.getElementsByName("answer-options");
-    for (i = 0; i < radiobuttons.length; i++) {
-        radiobuttons[i].checked = false;
+    let radioButtons = document.getElementsByName("answer-options");
+    for (i = 0; i < radioButtons.length; i++) {
+        radioButtons[i].checked = false;
     }
     questionIndex++;
     displayQuestion();
@@ -161,7 +161,7 @@ function nextQuestion() {
  */
 function updateQuestionNumber() {
     let currentQuestionNumber = parseInt(document.getElementById("current-question-number").innerHTML);
-    if (currentQuestionNumber < 5) {
+    if (currentQuestionNumber < QUIZ_QUESTIONS.length) {
         document.getElementById("current-question-number").innerText = currentQuestionNumber + 1;
     }
 }
