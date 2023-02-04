@@ -94,7 +94,7 @@ shows their final score.
 
 ### Typography
 
-
+* The font 'Fredoka' from Google Fonts was used for both headings and body content.
 
 ### Color Schemes
 
@@ -102,8 +102,7 @@ shows their final score.
 It was chosen because of a strong association with wildlife and nature, the main theme of the quiz.
 * Orange is used on buttons to draw attention to them due to a strong contrast with green. 
 * Background and foreground color combinations have been checked where possible to ensure they 
-meet WCAG AA Color Contrast requirements. 
-* Color contrast was checked using [Web AIM](https://webaim.org/resources/contrastchecker/). Not all combinations could be checked due to the background image. 
+meet WCAG AA Color Contrast requirements. Color contrast was checked using [Web AIM](https://webaim.org/resources/contrastchecker/). Not all combinations could be checked due to the background image. 
 
 ## Wireframes
 
@@ -136,7 +135,7 @@ meet WCAG AA Color Contrast requirements.
 
 * JavaScript code was validated using [JSHint](https://jshint.com/). No errors were found.
 * CSS code was validated using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator). No errors were found.
-* HTML code was validated using the [W3C Markup Validation Service](https://validator.w3.org/). 
+* HTML code was validated using the [W3C Markup Validation Service](https://validator.w3.org/). No errors were found.
 
 ### Test Cases
 
