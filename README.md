@@ -164,7 +164,7 @@ question.
 
 ### Fixed Bugs
 
-Add one more fixed bug?
+* On very small width screens such as the Galaxy Fold, the 'Next Question' button was not visible at the bottom of the screen. This was fixed by adding a media query to decrease overall font size and decrease the size of the margin above the page heading for very small screen widths such as the Galaxy Fold. 
 
 * One of the radio button and label answer option pairs split onto separate lines when viewing on 
 a small mobile screen. This was fixed by enclosing each radio button and label pair in a span 
