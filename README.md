@@ -171,10 +171,9 @@ and giving each a property of display: inline-block.
 
 ### Supported Screens and Browsers
 
-Add devices it has been tested on
-
 * The site was designed mobile-first. Responsive units were used for positioning and sizing
-throughout, with few exceptions.
+throughout, with few exceptions. Media queries have been added to accommodate screen widths as small as 280px. 
+* The site has been tested for the following devices using the Emulator in Chrome DevTools: Galaxy Fold, iPad, Samsung Galaxy S8, Samsung Galaxy S20 Ultra, iPad Air and iPhone 12 Pro. 
 * The website has not been tested on browsers other than Chrome.
 
 ## Deployment
