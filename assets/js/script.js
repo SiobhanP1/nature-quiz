@@ -1,10 +1,10 @@
 //Array containing quiz questions with corresponding answer options.
 const QUIZ_QUESTIONS = [{
-        "question": "Which bird is famously intelligent and known to remember humans that help it?",
+        "question": "Which of these birds is not commonly seen in Ireland?",
         "option1": "Robin",
-        "option2": "Thrush",
-        "option3": "Crow",
-        "correctAnswer": "Crow"
+        "option2": "Tawny Owl",
+        "option3": "Thrush",
+        "correctAnswer": "Tawny Owl"
     },
     {
         "question": "There are 98 different species of which creature in Ireland?",
@@ -14,25 +14,25 @@ const QUIZ_QUESTIONS = [{
         "correctAnswer": "Bees"
     },
     {
-        "question": "Question3?",
-        "option1": "Birds",
-        "option2": "Bees",
-        "option3": "Cats",
-        "correctAnswer": "Bees"
+        "question": "Which of these is Ireland's largest mammal?",
+        "option1": "Basking Shark",
+        "option2": "Red Deer",
+        "option3": "Pine Martin",
+        "correctAnswer": "Basking Shark"
     },
     {
-        "question": "Question4?",
-        "option1": "Birds",
-        "option2": "Bees",
-        "option3": "Cats",
-        "correctAnswer": "Bees"
+        "question": "Which of these is not native to Ireland?",
+        "option1": "Golden Eagle",
+        "option2": "Grey Wolf",
+        "option3": "Grey Squirrel",
+        "correctAnswer": "Grey Squirrel"
     },
     {
-        "question": "Question5?",
-        "option1": "Birds",
-        "option2": "Bees",
-        "option3": "Cats",
-        "correctAnswer": "Bees"
+        "question": "Which type of bear is native to Ireland?",
+        "option1": "Grizzly Bear",
+        "option2": "Brown Bear",
+        "option3": "Moon Bear",
+        "correctAnswer": "Brown Bear"
     }
 ];
 
