@@ -7,7 +7,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     height: 100%;
 }
 
@@ -16,8 +17,9 @@ body {
     font-family: 'Fredoka', sans-serif;
 }
 
-h1, h2 {
-    font-size: clamp(2.3rem, 5vw, 3rem);
+h1,
+h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
     text-align: center;
     color: white;
 }
@@ -174,4 +176,26 @@ body a {
 
 .option-label-group {
     display: inline-block;
+}
+
+/* Media query for phones of very small width up to 320px including the Galaxy Fold */
+
+@media screen and (max-width: 320px) {
+
+    .nav-margin {
+        margin-top: 1rem;
+    }
+
+    .small-txt {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media query for phone of small screen width up to 370px */
+
+@media screen and (max-width: 370px) {
+
+    .nav-margin {
+        margin-top: 2rem;
+    }
 }
