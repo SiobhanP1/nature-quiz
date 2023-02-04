@@ -90,6 +90,7 @@ body a {
 .quiz-button-container {
     align-self: center;
     width: 150px;
+    text-align: center;
 }
 
 .hidden {
