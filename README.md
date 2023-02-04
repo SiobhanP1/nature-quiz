@@ -134,7 +134,9 @@ meet WCAG AA Color Contrast requirements.
 
 ### Code Validation
 
-Add validation info here
+* JavaScript code was validated using [JSHint](https://jshint.com/). No errors were found.
+* CSS code was validated using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator). No errors were found.
+* HTML code was validated using the [W3C Markup Validation Service](https://validator.w3.org/). 
 
 ### Test Cases
 
